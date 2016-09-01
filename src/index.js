@@ -21,6 +21,7 @@ const tracks = [
     title: 'Some other track'
   }
 ];
+
 const store = configureStore();
 store.dispatch(actions.setTracks(tracks));
 
@@ -35,7 +36,6 @@ ReactDOM.render(
         <Route path="/callback" component={Callback} />
       </Route>
     </Router>
-    <Stream />
   </Provider>,
   document.getElementById('app')
 );
